@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>leap_year_or_not</title>
+</head>
+<body>
+    <center><h1>write a program to find the given input year is leap_year or not_a_leap_year.</h1></center>
+</body>
+<script>
+    function main()
+    {
+        let year = Number(prompt("enter year"));
+        if (year % 400 == 0 && year % 100 == 0)
+        {
+            console.log(`${year} is leap_year`);
+        }
+        else if(year % 4 == 0)
+        {
+            console.log(`${year} is leap_year`)
+        }
+        else
+        {
+            console.log(`${year} is not a leap_year`)
+        }
+    }
+    main();
+</script>
+</html>
